@@ -25,6 +25,7 @@ public class Main {
     int position = calculateHighScorePosition(1500);
 
 
+
     public static void displayHighScorePosition (String playerName, int position){
         System.out.println(playerName + "managed to get into position " + position + "on the high score table");
     }
