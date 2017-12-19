@@ -8,8 +8,15 @@ public class BankAccount {
     private String email;
     private String phoneNumber;
 
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public BankAccount(){
         this(56789, 300.00, "Default name", "Default email address", "Default phone");
+
         System.out.println("New constructor called.");
     }
 
