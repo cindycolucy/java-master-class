@@ -3,10 +3,24 @@ package com.colucy;
 public class BankAccount {
 
     private int accountNumber;
-    private double balance = 10000.00;
+    private double balance;
     private String customerName;
     private String email;
     private String phoneNumber;
+
+    public BankAccount(){
+        this(56789, 300.00, "Default name", "Default email address", "Default phone");
+        System.out.println("New constructor called.");
+    }
+
+    public BankAccount(int accountNumber, double balance, String customerName, String email, String phoneNumber){
+        System.out.println("Account constructor with parameters called.");
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
 
     public int getAccountNumber() {
         return accountNumber;
