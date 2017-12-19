@@ -18,6 +18,7 @@ public class BankAccount {
         this(56789, 300.00, "Default name", "Default email address", "Default phone");
 
         System.out.println("New constructor called.");
+
     }
 
     public BankAccount(int accountNumber, double balance, String customerName, String email, String phoneNumber){
@@ -76,7 +77,7 @@ public class BankAccount {
     }
 
     public void withdrawFunds(double withdrawl) {
-        if (this.balance - withdrawl <= 0) {
+        if (this.balance - withdrawl < 0) {
             System.out.println("Only $" + this.balance + "available.");
         } else {
             this.balance -= withdrawl;
